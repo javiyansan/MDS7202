@@ -8,9 +8,7 @@ Este repositorio contiene los laboratorios y entregas del curso, organizados por
 
 | Nombre | GitHub |
 |--------|--------|
-| Matías Sweet | [@matisweet](https://github.com/matisweet) |
 | Javiera Yañez| [@javiyansan](https://github.com/javiyansan) |
-| Leonardo Navarro| [@leo-navarro-t](https://github.com/leo-navarro-t) |
 
 ## Estructura del repositorio
 
