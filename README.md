@@ -16,9 +16,7 @@ Este repositorio contiene los laboratorios y entregas del curso, organizados por
 .
 ├── labs/
 │   ├── lab_1/
-│   └── lab_2/
-│   └── lab_3/
-│   └── lab_4/
+│   └── ...
 ├── pyproject.toml
 ├── .pre-commit-config.yaml
 └── README.md
