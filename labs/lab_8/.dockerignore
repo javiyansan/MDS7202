@@ -1,0 +1,10 @@
+.venv
+__pycache__
+*.pyc
+.git
+mlruns
+mlflow.db
+*.ipynb
+.ipynb_checkpoints
+optimize.py
+water_potability.csv
