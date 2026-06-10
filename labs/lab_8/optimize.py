@@ -30,9 +30,9 @@ def optimize_model():
     # Optimización de hiperparámetros del modelo con optuna y mlflow
     # -----------------------------------------------------------------
     # Nombre reconocible para experimento
-    experiment = mlflow.get_experiment_by_name("Potabilidad_XGBoost_experimento")
+    experiment = mlflow.get_experiment_by_name("Potabilidad_XGBoost_experimento2")
     if experiment is None:
-        experiment_id = mlflow.create_experiment("Potabilidad_XGBoost_experimento")
+        experiment_id = mlflow.create_experiment("Potabilidad_XGBoost_experimento2")
     else:
         experiment_id = experiment.experiment_id
 
@@ -47,7 +47,7 @@ def optimize_model():
         # Nombre interpretable para el run
         run_name = f"XGBoost con lr {params['learning_rate']:.3f} y depth {params['max_depth']}"
 
-        # Entrenamiento de XGBoost con pruning para detener los trials que van mal (mlflow)
+        # Entrenamiento de XGBoost (mlflow)
         with mlflow.start_run(experiment_id=experiment_id, run_name=run_name):
             model = XGBClassifier(seed=42, eval_metric="logloss", **params)
             model.fit(

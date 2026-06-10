@@ -1,0 +1,35 @@
+artifact_path: /Users/javierayanez/Documents/Semestre 11/MDS7202-Laboratorio_Programacion_Cientifica/Studio
+  J - MDS7202/labs/lab_8/mlruns/4/models/m-a7aa33ccabce40ceb48ee295e6fdfd8e/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.14.2
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.2.0
+is_signature_from_type_hint: false
+mlflow_version: 3.13.0
+model_id: m-a7aa33ccabce40ceb48ee295e6fdfd8e
+model_size_bytes: 350872
+model_uuid: m-a7aa33ccabce40ceb48ee295e6fdfd8e
+prompts: null
+run_id: 329f144ef20145de801d79c00e63a445
+signature:
+  inputs: '[{"type": "double", "name": "ph", "required": true}, {"type": "double",
+    "name": "Hardness", "required": true}, {"type": "double", "name": "Solids", "required":
+    true}, {"type": "double", "name": "Chloramines", "required": true}, {"type": "double",
+    "name": "Sulfate", "required": true}, {"type": "double", "name": "Conductivity",
+    "required": true}, {"type": "double", "name": "Organic_carbon", "required": true},
+    {"type": "double", "name": "Trihalomethanes", "required": true}, {"type": "double",
+    "name": "Turbidity", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-10 16:25:03.069491'

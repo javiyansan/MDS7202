@@ -1,0 +1,30 @@
+artifact_path: /Users/javierayanez/Documents/Semestre 11/MDS7202-Laboratorio_Programacion_Cientifica/Studio
+  J - MDS7202/labs/lab_8/mlruns/0/models/m-19a4edfa589c4ea3a47862168bbf73a4/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.13.0
+model_id: m-19a4edfa589c4ea3a47862168bbf73a4
+model_size_bytes: 698055
+model_uuid: m-19a4edfa589c4ea3a47862168bbf73a4
+prompts: null
+run_id: d3c9d5c813ca4387a694ece239f762e8
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 10]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-10 16:22:05.044951'

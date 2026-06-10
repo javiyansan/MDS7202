@@ -1,0 +1,24 @@
+artifact_path: /Users/javierayanez/Documents/Semestre 11/MDS7202-Laboratorio_Programacion_Cientifica/Studio
+  J - MDS7202/labs/lab_8/mlruns/4/models/m-b9ef27220f0141a68d155f1e147e9ac1/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.13.0
+model_id: m-b9ef27220f0141a68d155f1e147e9ac1
+model_size_bytes: 938879
+model_uuid: m-b9ef27220f0141a68d155f1e147e9ac1
+prompts: null
+run_id: 185ace7afd3a4deea6f1932067e14e11
+utc_time_created: '2026-06-10 16:24:09.212024'
