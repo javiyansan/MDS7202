@@ -1,0 +1,32 @@
+services:
+  backend:
+    build: ./backend
+    image: chaucherapp-backend:1.0.0
+    container_name: chaucherapp-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    volumes:
+      - ./backend:/app
+    networks:
+      - chaucher-net
+
+  frontend:
+    build: ./frontend
+    image: chaucherapp-frontend:1.0.0
+    container_name: chaucherapp-frontend
+    ports:
+      - "7860:7860"
+    environment:
+      - BACKEND_URL=http://backend:8000
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    networks:
+      - chaucher-net
+
+networks:
+  chaucher-net:
+    driver: bridge

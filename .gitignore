@@ -206,3 +206,20 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 .DS_Store
+
+
+# Secretos
+.env
+
+# Artefactos y cache
+__pycache__/
+*.pyc
+.cache_pipelines/
+.venv/
+
+
+mlflow.db
+mlruns/
+.cache_pipelines/
+.venv/
+.env
