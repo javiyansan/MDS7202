@@ -1,6 +1,5 @@
 """
 Adaptación del pipeline.
-
 """
 
 import os
