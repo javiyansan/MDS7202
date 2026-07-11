@@ -217,7 +217,7 @@ __pycache__/
 .cache_pipelines/
 .venv/
 
-
+mlflow.db
 mlruns/
 .cache_pipelines/
 .venv/
