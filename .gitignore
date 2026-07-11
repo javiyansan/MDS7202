@@ -218,7 +218,6 @@ __pycache__/
 .venv/
 
 
-mlflow.db
 mlruns/
 .cache_pipelines/
 .venv/
